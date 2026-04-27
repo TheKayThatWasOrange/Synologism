@@ -33,12 +33,12 @@
             const right_triangle = document.querySelectorAll('.v-icon-tgl-alert');
             const left_triangle = document.querySelectorAll('.v-icon-tgl-layout');
 
-            if (right_triangle.length && left_triangle.length) {
+            if ( right_triangle.length && left_triangle.length ) {
                 stop_polling = true;
 
                 const triangle_observer_config = { attributes: true, childList: false, subtree: false };
                 const triangle_observer_callback = (mutations, observer) => {
-                    for (const mutation of mutations) {
+                    for ( const mutation of mutations ) {
                         if (mutation.attributeName == "style") {
                             right_triangle[0].style.display = left_triangle[0].style.display;
                         }
@@ -55,7 +55,7 @@
                 stop_polling = true;
             }
 
-            if (stop_polling) {
+            if ( stop_polling ) {
                 clearInterval(poller);
             }
 
