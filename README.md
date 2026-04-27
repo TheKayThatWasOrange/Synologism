@@ -90,7 +90,7 @@ And now you can tail patch (almost) anything Synology does that you don't like. 
 
 You may not like any of the example hacks in these files, but they should hopefully illustrate just how painfully wrong all the Reddit gentlesirs are.
 
-Good day, sir.
+Open the door, please.
 
 
 
