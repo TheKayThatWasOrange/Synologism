@@ -1,0 +1,56 @@
+/*
+
+    Inject into:
+
+    /var/packages/SurveillanceStation/target/ui/desktop.html
+
+    <link rel="stylesheet" type="text/css" href="http://harlock.piss:8080/synology/injected.css">
+
+*/
+
+/* Reclaim the title bar space. */
+.videoviewer-vue-window > .x-window-tl {
+    display: none !important;
+}
+
+ /* Stop all map animations. The canvas element
+dynamically calculates the distance it needs
+to scroll by interrogating the geometry of
+this popup thing. If it has no geometry then the
+scroll distance will always be zero and we don't
+have to write any crazy JavaScript. */
+.emap-popup-content {
+    display: none !important;
+}
+
+/* Get rid of the useless buttons along the top
+of the map. */
+.emap-top-left-container {
+    display: none !important;
+}
+
+/* Get rid of the useless map title bar. */
+.emap-channel + .v-osd-item .v-osd-tbar {
+    display: none !important;
+}
+
+/* Kill the camera adding marquee thing. Who the fuck
+wants this? */
+.btn-icon-multi-select-obj {
+    display: none !important;
+    margin: 0px !important;
+}
+
+/* Kill the big red alert bell. */
+.v-icon-btn-cursor.v-panel-float-ct.v-alert-icon {
+    display: none !important;
+}
+
+/* Kill the stupid alert eye icons that cover the time. */
+[class*="alert_indicator"] {
+    display: none !important;
+}
+
+.marker-container {
+    opacity: 75%;
+}
