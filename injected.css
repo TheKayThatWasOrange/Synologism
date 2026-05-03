@@ -4,16 +4,16 @@
 
     /var/packages/SurveillanceStation/target/ui/desktop.html
 
-    <link rel="stylesheet" type="text/css" href="http://harlock.piss:8080/synology/injected.css">
+    <link rel="stylesheet" type="text/css" href="//harlock.piss/synology/injected.css">
 
 */
 
 /* Reclaim the title bar space. */
-.videoviewer-vue-window > .x-window-tl {
+.videoviewer-vue-window>.x-window-tl {
     display: none !important;
 }
 
- /* Stop all map animations. The canvas element
+/* Stop all map animations. The canvas element
 dynamically calculates the distance it needs
 to scroll by interrogating the geometry of
 this popup thing. If it has no geometry then the
@@ -30,7 +30,7 @@ of the map. */
 }
 
 /* Get rid of the useless map title bar. */
-.emap-channel + .v-osd-item .v-osd-tbar {
+.emap-channel+.v-osd-item .v-osd-tbar {
     display: none !important;
 }
 
